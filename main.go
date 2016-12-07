@@ -2,5 +2,12 @@ package
 
 import ("crypto/tls")
 
-func getOrigin() {
+type originInfo struct {
+  Hostname string,
+  Port int
+}
+
+func getOrigin() originInfo {
+  oOriginInfo := originInfo{}
+  return oOriginInfo
 }
